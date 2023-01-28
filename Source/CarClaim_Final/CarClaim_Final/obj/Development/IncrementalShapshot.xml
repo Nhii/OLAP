@@ -1,0 +1,166 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>CarClaim_Final</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>/EcXDubciNcn1jLDvg7GgFETLn4=23/05/2022 6:42:52 SA23/05/2022 6:42:52 SA</TimeStamp>
+        <ID>
+          <String>Car Claimfn WH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>atdcWOAQgec6IKNffHviESnepWo=23/05/2022 6:43:10 SA23/05/2022 6:43:10 SA</TimeStamp>
+        <ID>
+          <String>Car Claimfn WH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KR7mc9y8zHbQDze3PQAFrGr/YXI=23/05/2022 6:43:27 SA23/05/2022 6:43:27 SA</TimeStamp>
+        <ID>
+          <String>Dim Driver</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xjdxnrpFW8Hrq1GTq+SLNz37xcU=23/05/2022 6:43:27 SA23/05/2022 6:43:27 SA</TimeStamp>
+        <ID>
+          <String>Dim Vehicle</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>88kpO8R+Z6S0X+PxDy4lwpA/yLU=23/05/2022 8:35:22 SA23/05/2022 6:43:27 SA</TimeStamp>
+        <ID>
+          <String>Dim Time</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>h2dIWWbt5nXCBPa2rEU73sIuQrU=23/05/2022 6:43:27 SA23/05/2022 6:43:27 SA</TimeStamp>
+        <ID>
+          <String>Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Wcg0TKbZbzrhTp5TTBchc2DagSw=15/06/2022 3:28:25 CH23/05/2022 6:43:27 SA/qOI5yfUA3sSwvHV2phWLTgXse4=23/05/2022 9:30:25 SA23/05/2022 6:43:27 SA</TimeStamp>
+        <ID>
+          <String>Car Claimfn WH</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>FtybSn8dsxszutDA+/Nl5kDFxK0=23/05/2022 8:21:16 SA23/05/2022 8:21:16 SA</TimeStamp>
+        <ID>
+          <String>Dim Driver</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>I7mSxPtVpBxjBViLi3j5vM9/Aa0=23/05/2022 8:28:19 SA23/05/2022 8:28:19 SA</TimeStamp>
+        <ID>
+          <String>Dim Driver 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>WMy0VpK2sRK9xdxlyJK73ApTyEk=23/05/2022 10:43:55 SA23/05/2022 10:43:55 SA</TimeStamp>
+        <ID>
+          <String>Dim Driver 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>fYfWDzUbx0ZcBGcSbRyr+87Bo1c=23/05/2022 10:47:30 SA23/05/2022 10:47:30 SA</TimeStamp>
+        <ID>
+          <String>Dim Driver 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>5L6pD1vZ6nGTCOCJcHdbpXqvqWo=23/05/2022 10:49:29 SA23/05/2022 10:49:29 SA</TimeStamp>
+        <ID>
+          <String>Fact</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>rTMM+LYNLFfDwaY7FVaotto8ntY=23/05/2022 10:51:26 SA23/05/2022 10:51:26 SA</TimeStamp>
+        <ID>
+          <String>Fact 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>7ZYii/NA7ZjBnYeWRP8M2LTw2lE=23/05/2022 10:57:35 SA23/05/2022 10:54:50 SA</TimeStamp>
+        <ID>
+          <String>Fact 2</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>PoCJ+AJl2yhwnF2/gifGyirX92A=23/05/2022 11:01:02 SA23/05/2022 11:01:02 SA</TimeStamp>
+        <ID>
+          <String>Fact 3</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>6Hh/UiA8fvx+RWNlqasSPJtxnhI=23/05/2022 11:05:57 SA23/05/2022 11:05:57 SA</TimeStamp>
+        <ID>
+          <String>Fact 4</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>liya/oYvpQl6HI/8hGciiCnwGcc=23/05/2022 11:13:59 SA23/05/2022 11:13:59 SA</TimeStamp>
+        <ID>
+          <String>Fact 5</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>lej4AFxf0i82M2w73BneIT59yWE=15/06/2022 5:59:18 CH15/06/2022 5:59:18 CH</TimeStamp>
+        <ID>
+          <String>Fact 6</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.MiningStructure</Type>
+        <TimeStamp>WISbUAz1UR066olKZqNU2KwMNFg=15/06/2022 6:07:49 CH15/06/2022 6:07:47 CH</TimeStamp>
+        <ID>
+          <String>Fact 7</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>TZsUlrrKOK6EGxbunSSFB0lILiw=23/05/2022 2:57:38 SA23/05/2022 2:57:38 SA</TimeStamp>
+      <ID>
+        <String>CarClaim_Final</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2022-06-15T13:05:47.696667Z</LastDeployed>
+</DeploymentSnapshot>

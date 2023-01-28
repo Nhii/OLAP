@@ -1,0 +1,278 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6f4a12c8-fd1e-4afb-b051-7040e16bc045" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Car Claimfn WH</ID>
+  <Name>Car Claimfn WH</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Car Claimfn WH</DataSourceID>
+  <Schema>
+    <xs:schema id="Car_x0020_Claimfn_x0020_WH" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Car_x0020_Claimfn_x0020_WH" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="3ffdf271-2b90-405c-9c59-f244c351f36b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_fact" msprop:design-time-name="6d532921-d3fd-44d8-b8b6-5e9184f6f1c1" msprop:DbTableName="fact" msprop:FriendlyName="fact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="claim_date" msprop:design-time-name="d0f8418c-1b0d-4ba9-a7b6-1dbad0363c8e" msprop:DbColumnName="claim_date" msprop:FriendlyName="claim_date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="claim_number" msprop:design-time-name="7caa9781-f70e-498e-8f07-17d5edab45f7" msprop:DbColumnName="claim_number" msprop:FriendlyName="claim_number">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="age_of_driver" msprop:design-time-name="ea330ef4-9ad0-432e-8256-1ad810034266" msprop:DbColumnName="age_of_driver" msprop:FriendlyName="age_of_driver" type="xs:double" minOccurs="0" />
+                  <xs:element name="safty_rating" msprop:design-time-name="4ad9b305-5e37-4de1-a4df-ac9bb977ebc9" msprop:DbColumnName="safty_rating" msprop:FriendlyName="safty_rating" type="xs:double" minOccurs="0" />
+                  <xs:element name="annual_income" msprop:design-time-name="d0023dc1-1fb3-4b15-93b8-3c53fd25bb21" msprop:DbColumnName="annual_income" msprop:FriendlyName="annual_income" type="xs:double" minOccurs="0" />
+                  <xs:element name="past_num_of_claims" msprop:design-time-name="d6341248-ad94-4778-b172-72b76f1597f7" msprop:DbColumnName="past_num_of_claims" msprop:FriendlyName="past_num_of_claims" type="xs:double" minOccurs="0" />
+                  <xs:element name="claim_est_payout" msprop:design-time-name="c2133e24-d399-423e-bde7-f3c6ce069906" msprop:DbColumnName="claim_est_payout" msprop:FriendlyName="claim_est_payout" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="age_of_vehicle" msprop:design-time-name="15fe32fe-36f4-4947-811b-c5a1ad34dca5" msprop:DbColumnName="age_of_vehicle" msprop:FriendlyName="age_of_vehicle" type="xs:double" minOccurs="0" />
+                  <xs:element name="vehicle_category" msprop:design-time-name="d5fc4331-710a-4380-a591-213d9257702b" msprop:DbColumnName="vehicle_category" msprop:FriendlyName="vehicle_category" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehicle_price" msprop:design-time-name="6e307740-fd2e-4bbf-bff3-5d22a360d741" msprop:DbColumnName="vehicle_price" msprop:FriendlyName="vehicle_price" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="vehicle_weight" msprop:design-time-name="b1b223fa-b5cd-489a-8b89-4d4b0a678ca5" msprop:DbColumnName="vehicle_weight" msprop:FriendlyName="vehicle_weight" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="fraud" msprop:design-time-name="700dc11c-251e-4035-9cd2-0e22f2080e2a" msprop:DbColumnName="fraud" msprop:FriendlyName="fraud" type="xs:double" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_vehicle" msprop:design-time-name="67473a5a-5aa0-4111-93c0-9bf8353df4c6" msprop:DbTableName="dim_vehicle" msprop:FriendlyName="dim_vehicle" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="vehicle_category" msprop:design-time-name="7ce23021-1638-45e1-a3fe-6be6f26112ad" msprop:DbColumnName="vehicle_category" msprop:FriendlyName="vehicle_category">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_driver" msprop:design-time-name="82e3ba96-9794-4b39-a81e-585094f9a428" msprop:DbTableName="dim_driver" msprop:FriendlyName="dim_driver" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="claim_number" msprop:design-time-name="60b3dbf5-a0fc-420d-9e77-58749d90ac8b" msprop:DbColumnName="claim_number" msprop:FriendlyName="claim_number">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="gender" msprop:design-time-name="0d99dd80-54ed-4a1e-9cb0-9e770fb94bbb" msprop:DbColumnName="gender" msprop:FriendlyName="gender" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="marital_status" msprop:design-time-name="df530448-89b5-49d0-906f-7555de8bef15" msprop:DbColumnName="marital_status" msprop:FriendlyName="marital_status" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="living_status" msprop:design-time-name="59472f8c-f450-4caf-9799-a1992e1c982f" msprop:DbColumnName="living_status" msprop:FriendlyName="living_status" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="zip_code" msprop:design-time-name="40a834f0-44ab-4771-bf2a-5ba8404db7ea" msprop:DbColumnName="zip_code" msprop:FriendlyName="zip_code" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_time" msprop:design-time-name="9c4558c2-0dc7-486b-ab33-1e9a372a3ce3" msprop:DbTableName="dim_time" msprop:FriendlyName="dim_time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="claim_date" msprop:design-time-name="9bf7f0ae-cf39-40de-b331-9b5f505de686" msprop:DbColumnName="claim_date" msprop:FriendlyName="claim_date" type="xs:dateTime" />
+                  <xs:element name="claim_month" msprop:design-time-name="347cf26d-e00c-4b33-a14a-f856233cb12e" msprop:DbColumnName="claim_month" msprop:FriendlyName="claim_month" type="xs:int" minOccurs="0" />
+                  <xs:element name="claim_year" msprop:design-time-name="97707229-5344-403e-b242-5a65884381ee" msprop:DbColumnName="claim_year" msprop:FriendlyName="claim_year" type="xs:int" minOccurs="0" />
+                  <xs:element name="claim_quarter" msprop:design-time-name="a2fa5cd1-3cce-44c0-882e-d01c4880a540" msprop:DbColumnName="claim_quarter" msprop:FriendlyName="claim_quarter" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_area" msprop:design-time-name="ad97eddd-0efd-4810-bb4c-38f839c44159" msprop:DbTableName="dim_area" msprop:FriendlyName="dim_area" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="zip_code" msprop:design-time-name="0e98056f-a2dc-4d36-9c8e-d9e14643414c" msprop:DbColumnName="zip_code" msprop:FriendlyName="zip_code">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_gender" msprop:design-time-name="24b2ff54-f4f7-45e1-8c9c-bc3ebf0bd3ac" msprop:DbTableName="dim_gender" msprop:FriendlyName="dim_gender" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="gender" msprop:design-time-name="4d2b8c35-d4e7-49bf-8fce-a5fb974af9cb" msprop:DbColumnName="gender" msprop:FriendlyName="gender">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_livingstatus" msprop:design-time-name="75797598-9c18-443e-b196-088716fa5625" msprop:DbTableName="dim_livingstatus" msprop:FriendlyName="dim_livingstatus" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="living_status" msprop:design-time-name="7d7d83ae-b30c-46c2-86c0-609cccfc9188" msprop:DbColumnName="living_status" msprop:FriendlyName="living_status">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_dim_marital_status" msprop:design-time-name="381cb58d-7d73-403c-bca2-5987c565705c" msprop:DbTableName="dim_marital_status" msprop:FriendlyName="dim_marital_status" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="marital_status" msprop:design-time-name="954d1aeb-961c-43eb-9150-00d8862d4c99" msprop:DbColumnName="marital_status" msprop:FriendlyName="marital_status">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="claim_number" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_vehicle_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_vehicle" />
+          <xs:field xpath="vehicle_category" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_driver_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_driver" />
+          <xs:field xpath="claim_number" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_time" />
+          <xs:field xpath="claim_date" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_area_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_area" />
+          <xs:field xpath="zip_code" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_gender_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_gender" />
+          <xs:field xpath="gender" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_livingstatus_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_livingstatus" />
+          <xs:field xpath="living_status" />
+        </xs:unique>
+        <xs:unique name="dbo_dim_marital_status_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_dim_marital_status" />
+          <xs:field xpath="marital_status" />
+        </xs:unique>
+        <xs:keyref name="FK_dim_driver_dim_gender" refer="dbo_dim_gender_Constraint1">
+          <xs:selector xpath=".//dbo_dim_driver" />
+          <xs:field xpath="gender" />
+        </xs:keyref>
+        <xs:keyref name="FK_dim_driver_dim_marital_status" refer="dbo_dim_marital_status_Constraint1">
+          <xs:selector xpath=".//dbo_dim_driver" />
+          <xs:field xpath="marital_status" />
+        </xs:keyref>
+        <xs:keyref name="FK_dim_driver_dim_livingstatus" refer="dbo_dim_livingstatus_Constraint1">
+          <xs:selector xpath=".//dbo_dim_driver" />
+          <xs:field xpath="living_status" />
+        </xs:keyref>
+        <xs:keyref name="FK_dim_driver_dim_area" refer="dbo_dim_area_Constraint1">
+          <xs:selector xpath=".//dbo_dim_driver" />
+          <xs:field xpath="zip_code" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_dim_time" refer="dbo_dim_time_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="claim_date" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_dim_vehicle" refer="dbo_dim_vehicle_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="vehicle_category" />
+        </xs:keyref>
+        <xs:keyref name="FK_fact_dim_driver" refer="dbo_dim_driver_Constraint1">
+          <xs:selector xpath=".//dbo_fact" />
+          <xs:field xpath="claim_number" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Car_x0020_Claimfn_x0020_WH xmlns="" />
+  </Schema>
+</DataSourceView>

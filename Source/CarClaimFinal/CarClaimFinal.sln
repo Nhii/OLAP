@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "CarClaimFinal", "CarClaimFinal\CarClaimFinal.dtproj", "{EC55C66C-2787-43CA-AFBD-F5390363B397}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC55C66C-2787-43CA-AFBD-F5390363B397}.Development|Default.ActiveCfg = Development
+		{EC55C66C-2787-43CA-AFBD-F5390363B397}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C79D1F97-45AC-4266-BFA8-F6F46885B182}
+	EndGlobalSection
+EndGlobal
